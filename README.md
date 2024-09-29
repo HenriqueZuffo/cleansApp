@@ -1,16 +1,11 @@
 # cleans_app
 
-A new Flutter project.
+New project to university work.
 
-## Getting Started
+Don't need running anything other than this app
 
-This project is a starting point for a Flutter application.
+Doesn't have the best practice, but works
 
-A few resources to get you started if this is your first Flutter project:
+## Explanation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+App to informate people about garbage and its types and for complaint to government about garbage on the street or Waste ground
