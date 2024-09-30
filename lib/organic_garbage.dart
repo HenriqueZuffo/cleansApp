@@ -1,18 +1,19 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class RecycleGarbage extends StatefulWidget {
-  const RecycleGarbage({super.key});
+class OrganicGarbage extends StatefulWidget {
+  const OrganicGarbage({super.key});
 
   @override
-  State<RecycleGarbage> createState() => _RecycleGarbageState();
+  State<OrganicGarbage> createState() => _OrganicGarbageState();
 }
 
-class _RecycleGarbageState extends State<RecycleGarbage> {
+class _OrganicGarbageState extends State<OrganicGarbage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lixo reciclável'),
+        title: Text('Lixo orgânico'),
       ),
       body: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -20,7 +21,7 @@ class _RecycleGarbageState extends State<RecycleGarbage> {
           Row(
             children: [
               Text('Exemplo: ', style: TextStyle(fontWeight: FontWeight.bold)),
-              Text('Papéis, plásticos, vidros, metais.')
+              Text('Restos de alimentos, folhas, resíduos vegetais.')
             ],
           ),
           SizedBox(height: 20,),
@@ -31,9 +32,10 @@ class _RecycleGarbageState extends State<RecycleGarbage> {
               ),
               SizedBox(width: 10,),
               Expanded(
-                  child: Text('Não é diretamente perigoso à saúde se manuseado corretamente. No entanto, '
-                      'quando acumulado de forma inadequada, pode acumular água e servir como criadouro de'
-                      ' mosquitos, como o Aedes aegypti, que transmite doenças como a dengue e chikungunya',
+                  child: Text('Quando não tratado adequadamente, '
+                      'o lixo orgânico pode atrair insetos e roedores, que transmitem doenças como '
+                      'leptospirose, dengue e gastroenterites. A decomposição também pode liberar '
+                      'gases nocivos.',
                   ))
             ],
           )

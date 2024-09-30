@@ -1,3 +1,4 @@
+import 'package:cleans_app/organic_garbage.dart';
 import 'package:cleans_app/recycle_garbage.dart';
 import 'package:flutter/material.dart';
 
@@ -25,13 +26,18 @@ class _Tips extends State<Tips>{
             title: const Text('Lixo reciclável'),
             onTap: () => {
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => RecycleGarbage())
+                MaterialPageRoute(builder: (context) => const RecycleGarbage())
               )
             },
           ),
-          const ListTile(
-            leading: Icon(Icons.food_bank),
-            title: Text('Lixo Orgânico'),
+          ListTile(
+            leading: const Icon(Icons.food_bank),
+            title: const Text('Lixo Orgânico'),
+            onTap: () => {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const OrganicGarbage())
+              )
+            },
           ),
           const ListTile(
             leading: Icon(Icons.battery_1_bar),
