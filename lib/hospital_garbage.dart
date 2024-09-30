@@ -1,27 +1,30 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class OrganicGarbage extends StatefulWidget {
-  const OrganicGarbage({super.key});
+class HospitalGarbage extends StatefulWidget {
+  const HospitalGarbage({super.key});
 
   @override
-  State<OrganicGarbage> createState() => _OrganicGarbageState();
+  State<HospitalGarbage> createState() => _HospitalGarbageState();
 }
 
-class _OrganicGarbageState extends State<OrganicGarbage> {
+class _HospitalGarbageState extends State<HospitalGarbage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Lixo orgânico'),
+        title: const Text('Lixo Hospitalar ou Biomédico'),
       ),
       body: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text('Exemplo: ', style: TextStyle(fontWeight: FontWeight.bold)),
-              Text('Restos de alimentos, folhas, resíduos vegetais.')
+              Expanded(
+                child: Text('Agulhas, seringas, curativos, medicamentos vencidos.')
+              )
             ],
           ),
           SizedBox(height: 20,),
@@ -32,10 +35,10 @@ class _OrganicGarbageState extends State<OrganicGarbage> {
               ),
               SizedBox(width: 10,),
               Expanded(
-                  child: Text('Quando não tratado adequadamente, '
-                      'o lixo orgânico pode atrair insetos e roedores, que transmitem doenças como '
-                      'leptospirose, dengue e gastroenterites. A decomposição também pode liberar '
-                      'gases nocivos.',
+                  child: Text('Pode transmitir infecções graves, '
+                      'como hepatite e HIV, além de expor as pessoas a substâncias químicas tóxicas. '
+                      'O lixo hospitalar mal descartado coloca em risco a saúde dos trabalhadores de coleta e da '
+                      'população em geral.',
                   ))
             ],
           )

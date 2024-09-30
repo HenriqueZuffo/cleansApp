@@ -12,7 +12,7 @@ class _RecycleGarbageState extends State<RecycleGarbage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lixo reciclável'),
+        title: const Text('Lixo reciclável'),
       ),
       body: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
