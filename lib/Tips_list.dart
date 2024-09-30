@@ -1,3 +1,4 @@
+import 'package:cleans_app/recycle_garbage.dart';
 import 'package:flutter/material.dart';
 
 class Tips extends StatefulWidget{
@@ -18,28 +19,33 @@ class _Tips extends State<Tips>{
         elevation: 20,
       ),
       body: ListView(
-        children: const [
+        children: [
           ListTile(
-            leading: Icon(Icons.recycling),
-            title: Text('Lixo reciclável'),
+            leading: const Icon(Icons.recycling),
+            title: const Text('Lixo reciclável'),
+            onTap: () => {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => RecycleGarbage())
+              )
+            },
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(Icons.food_bank),
             title: Text('Lixo Orgânico'),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(Icons.battery_1_bar),
             title: Text('Lixo Eletrônico'),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(Icons.local_hospital),
             title: Text('Lixo Hospitalar ou Biomédico'),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(Icons.warning_amber),
             title: Text('Lixo Tóxico ou Perigoso'),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(Icons.delete),
             title: Text('Lixo Comum ou Rejeito'),
           ),
