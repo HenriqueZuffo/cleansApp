@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:super_bullet_list/bullet_list.dart';
 
@@ -60,7 +59,7 @@ class _OrganicGarbageState extends State<OrganicGarbage> {
                   'Aumento no volume de aterros: O descarte inadequado de resíduos orgânicos aumenta o volume de lixo em aterros, acelerando sua capacidade máxima e criando a necessidade de novas áreas para deposição.',
                   style: TextStyle(fontSize: 17),
                 ),
-                Text( 
+                Text(
                   "Redução de oxigênio em corpos d'água: Quando o lixo orgânico chega a rios e lagos, a decomposição consome oxigênio da água, prejudicando a vida aquática e criando zonas mortas (áreas sem vida).",
                   style: TextStyle(fontSize: 17),
                 )
