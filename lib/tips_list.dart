@@ -1,3 +1,4 @@
+import 'package:cleans_app/common_garbage.dart';
 import 'package:cleans_app/electronic_garbage.dart';
 import 'package:cleans_app/hospital_garbage.dart';
 import 'package:cleans_app/organic_garbage.dart';
@@ -69,9 +70,14 @@ class _Tips extends State<Tips>{
               )
             },
           ),
-          const ListTile(
-            leading: Icon(Icons.delete),
-            title: Text('Lixo Comum ou Rejeito'),
+          ListTile(
+            leading: const Icon(Icons.delete),
+            title: const Text('Lixo Comum ou Rejeito'),
+            onTap: () => {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const CommonGarbage())
+              )
+            },
           ),
         ],
       )
