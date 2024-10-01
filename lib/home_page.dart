@@ -1,4 +1,4 @@
-import 'package:cleans_app/Tips_list.dart';
+import 'package:cleans_app/tips_list.dart';
 import 'package:cleans_app/complaint.dart';
 import 'package:flutter/material.dart';
 
