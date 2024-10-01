@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 
@@ -20,21 +20,23 @@ class _Complaint extends State<Complaint>{
         title: const Text("Viu um lote cheio de lixo? Denuncie"),
         elevation: 20,
       ),
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         height: 65,
         child: TextButton(
           onPressed: (){
             getPosition();
           }, 
-          child: Text("Denunciar") ),
+          child: const Text("Denunciar") ),
       ),
     );
   }
 
   getPosition(){
     Future<Position> position = Geolocator.getCurrentPosition();
-    print(position);
+    if (kDebugMode) {
+      print(position);
+    }
   }
 
 }
