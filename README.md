@@ -8,4 +8,4 @@ Doesn't have the best practice, but works
 
 ## Explanation
 
-App to informate people about garbage and its types and for complaint to government about garbage on the street or Waste ground
+App to inform people about garbage and its types also for complaint to government about garbage on the street or Waste ground
