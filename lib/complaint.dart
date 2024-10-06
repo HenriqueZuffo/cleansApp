@@ -26,6 +26,17 @@ class _Complaint extends State<Complaint>{
         child: TextButton(
           onPressed: (){
             getPosition();
+
+            final snackBar = SnackBar(
+              content: const Text("Denuncia enviada com sucesso"),
+              duration: const Duration(seconds: 5),
+              action: SnackBarAction(
+                  label: 'Fechar',
+                  onPressed: (){}
+              ),
+            );
+
+            ScaffoldMessenger.of(context).showSnackBar(snackBar);
           }, 
           child: const Text("Denunciar") ),
       ),
